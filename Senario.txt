@@ -1,0 +1,19 @@
+Sénario 1 :
+envoie d'un mess court
+mess: Coucou ! comment ça va ?
+
+Lancer skype
+Attendre 10 sec
+Envoyer mess
+Attendre 20 sec
+
+
+Sénario 2 : 
+reçois 1 mess court
+mess : Coucou ! comment ça va ?
+
+Skype ouvert sur autre convo
+attend 10 sec
+Reçois
+ouvre convo
+attend 20 sec
