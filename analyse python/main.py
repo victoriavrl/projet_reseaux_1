@@ -2,6 +2,10 @@ import pyshark
 
 #capture = pyshark.FileCapture("C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquet test 1mess\envoye_1mess_4G.pcapng")
 # print(dir(capture))
+
+#path = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\envoie_1mess_wifi\paquet3.pcapng"
+#capture = pyshark.FileCapture(path)
+
 def get_DNS_stats(filepath):
     capture = pyshark.FileCapture(filepath)
 
@@ -16,7 +20,6 @@ def get_DNS_stats(filepath):
 
     for i in range(len(capture)):
         try:
-            # print("t'es ou")
             if capture[i].dns.qry_name:
                 #print("DNS Request from ip source : ", capture[i].ip.src)
                 #print("DNS query name : ", capture[i].dns.qry_name)
@@ -36,11 +39,12 @@ def get_DNS_stats(filepath):
 
         #TODO : chercher domaine name
         
-        print("DNS Request from ip source : ", requests_ip_src)
-        print("DNS query names : ", query_names)
-        print("DNS Respond from ip sources : ", respond_ip_src)
-        print("DNS respond names : ", respond_names)
+    print("DNS Request from ip source : ", requests_ip_src)
+    print("DNS query names : ", query_names)
+    print("DNS Respond from ip sources : ", respond_ip_src)
+    print("DNS respond names : ", respond_names)
 
 
-filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquet test 1mess\envoye_1mess_4G.pcapng"
-get_DNS_stats(filepath)
+path = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\envoie_1mess_wifi\paquet3.pcapng"
+
+get_DNS_stats(path)
