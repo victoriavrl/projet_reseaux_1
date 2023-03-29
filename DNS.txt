@@ -1,0 +1,8 @@
+Nous avons observé qu'il y a une vingtaine de nom de domaine résolu lors de l'ouverture de l'application.
+Les serveurs autoritatifs pour ces nom de domaines sont gérer parl'entreprise MarkMonitor Inc qui est une entreprise qui ...
+Les noms de domaines résolu apartiennent à Microsoft (TODO : a vérifier je mets ça dans le vent moi :/)
+Les requête DNS effectué son des requêtes de type standars, qui sont des requête utilisé lorsque l'on veut récupérer des donnée, ce qui fait du sens car l'on veut charger l'appliation.
+Toutes les requets utilisé ont été faite de manière récursive ( TODO : explixer un petit peu)
+Les version d'adresse ipv4 ont l'air d'être préférer par skype. La majorité des demandes était des ipv4 (record A) et quelques une était demander en ipv4 et ipv6 (une demande avec le record A et une avec le record AAAA). (TODO : explication de pq)
+On a pu remarquer que les requêtes contenaaient des record additionel (données qui sont fournit en supplément) qui servent à (TODO: chercher à quoi sa sert oops (à l'air de donner l'adresse IP des serveurs autoritatif ?))
+Il y a l'air d'avoir pas mal de retransmition majoritairement pour les querry (TODO : vraiment bcp ou quantité normal + explications)
