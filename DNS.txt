@@ -1,8 +1,8 @@
 Nous avons observé qu'il y a une vingtaine de nom de domaine résolu lors de l'ouverture de l'application.
-Les serveurs autoritatifs pour ces nom de domaines sont gérer parl'entreprise MarkMonitor Inc qui est une entreprise qui ...
+Les serveurs autoritatifs pour ces noms de domaines sont géré parl'entreprise MarkMonitor Inc qui est une entreprise qui (TODO : ...)
 Les noms de domaines résolu apartiennent à Microsoft (TODO : a vérifier je mets ça dans le vent moi :/)
-Les requête DNS effectué son des requêtes de type standars, qui sont des requête utilisé lorsque l'on veut récupérer des donnée, ce qui fait du sens car l'on veut charger l'appliation.
+Les requêtes DNS effectué sont des requêtes de type standars, qui sont des requêtes utilisé lorsque l'on veut récupérer des données, ce qui fait du sens car l'on veut charger l'appliation.
 Toutes les requets utilisé ont été faite de manière récursive ( TODO : explixer un petit peu)
-Les version d'adresse ipv4 ont l'air d'être préférer par skype. La majorité des demandes était des ipv4 (record A) et quelques une était demander en ipv4 et ipv6 (une demande avec le record A et une avec le record AAAA). (TODO : explication de pq)
-On a pu remarquer que les requêtes contenaaient des record additionel (données qui sont fournit en supplément) qui servent à (TODO: chercher à quoi sa sert oops (à l'air de donner l'adresse IP des serveurs autoritatif ?))
-Il y a l'air d'avoir pas mal de retransmition majoritairement pour les querry (TODO : vraiment bcp ou quantité normal + explications)
+Les version d'adresse ipv4 ont l'air d'être préféré par skype. La majorité des demandes étaient des ipv4 (record A) et quelques une était demandé en ipv4 et ipv6 (une demande avec le record A et une avec le record AAAA). (TODO : explication de pq + de ipv4 et pq parfois demande pour les deux (j'ai vu quelque part que demander A et AAAA "normal when both stacks are bound" mais pas compris)
+On a pu remarquer que les requêtes contenaient des records additionel (données qui sont fournit en supplément) qui servent à (TODO: chercher à quoi ça sert (à l'air de donner l'adresse IP des serveurs autoritatif ?) (apres certaine requête souvent la même qui suit du coup donne déjà l'info ?))
+Il y a l'air d'avoir pas mal de retransmition majoritairement pour les querry (TODO : vraiment bcp ou quantité normal + explications (première piste : protocol UDP donc plus de rentransmition), parler du temps de retransmission choisi ? et si c'est vraiment des paquets perdu ou juste a pas attendu assez longtemps).
