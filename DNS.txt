@@ -7,3 +7,4 @@ Les version d'adresse ipv4 ont l'air d'être préféré par skype. La majorité 
 On a pu remarquer que les requêtes contenaient des records additionel (données qui sont fournit en supplément) qui servent à (TODO: chercher à quoi ça sert (à l'air de donner l'adresse IP des serveurs autoritatif ?) (apres certaine requête souvent la même qui suit du coup donne déjà l'info ?))
 Il y a l'air d'avoir pas mal de retransmition majoritairement pour les querry (TODO : vraiment bcp ou quantité normal + explications (première piste : protocol UDP donc plus de rentransmition), parler du temps de retransmission choisi ? et si c'est vraiment des paquets perdu ou juste a pas attendu assez longtemps).
 Nous avons remarquer que toute les réponses reçus on le record CNAME qui signifie que la requête est un alias. Mais aucune requête pour l'alias est faite après (TODO : expliquer pq, peut-être liens avec le schéma que tu avais trouvé)
+(TODO : parler du TTL)
