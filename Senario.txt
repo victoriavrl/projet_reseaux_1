@@ -17,3 +17,45 @@ attend 10 sec
 Reçois
 ouvre convo
 attend 20 sec
+
+
+Sénario 4 :
+skype pré-ouvert mais pas sur la convo en question
+Reçois mess
+mess : Coucou ! comment ça va ?
+Attend 10sec
+Envoie mess
+mess : hello cv cv
+Attend 10sec
+Reçois mess
+mess : Tu devinera jamais ce qui m'est arriver (suivis de plein plein de smiley)
+Attend 10sec
+Envoie 1 mess
+mess : omg omg je te crois pas ! jamais il c'est passée ça. Demande a François il te dira que tu dis de la grosse grosse merde! Je sais pas quoi écrire pour que ce soit long. Mon originalité s'arrête vraiment déjà ici. Bonne apétit. omg omg je te crois pas ! jamais il c'est passée ça. Demande a François il te dira que tu dis de la grosse grosse merde! Je sais pas quoi écrire pour que ce soit long. Mon originalité s'arrête vraiment déjà ici. Bonne apétit.omg omg je te crois pas ! jamais il c'est passée ça. Demande a François il te dira que tu dis de la grosse grosse merde! Je sais pas quoi écrire pour que ce soit long. Mon originalité s'arrête vraiment déjà ici. Bonne apétit. Bonne apétit.omg omg je te crois pas ! jamais il c'est passée ça. Demande a François il te dira que tu dis de la grosse grosse merde! Je sais pas quoi écrire pour que ce soit long. Mon originalité s'arrête vraiment déjà ici. Bonne apétit.
+Attend 10sec
+
+Sénario 5 (recois/envoie)
+recois appel
+décroche
+attend 10 sec
+L'autre pesro parle 10 sec
+attend 10 sec
+Perso paquet parle 10 sec
+attend 10 sec
+L'autre perso décroche 
+attend 10 sec
+
+Sénario 6 (recois/envoie)
+appel et décroche
+une personne avec caméra
+bouge pdt 30 sec
+decroche
+attend 10 sec
+
+
+
+
+
+
+
+
