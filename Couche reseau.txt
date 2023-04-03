@@ -1,4 +1,4 @@
 (TODO : parler du passage à travers les NAT)
-Pour l'envoye de message Skype passe par un serveur de microsoft qui ce trouve à l'adresse 52.159.49.199 (azwcus1-client-s.gateway.messenger.live.com).
+Pour l'envoye de message Skype utilise une architecture client-serveur. C'est à dire que les paquets passent par un serveur de microsoft qui ce trouve à l'adresse 52.159.49.199 (azwcus1-client-s.gateway.messenger.live.com) pour ensuite être envoyé au destinateur.
 On observe une grosse tendance à l'utilisation d'ipv4. Probablement car l'application ne marchait pas sur ipv6 de base (TODO : mtn ça marche ou pas ?)
 (TODO : peer to peer pour les appels video et audio ?)
