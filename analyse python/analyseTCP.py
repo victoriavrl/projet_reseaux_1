@@ -56,6 +56,8 @@ def get_TCP_dest(filepath):
 
 #filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\mess\envoie_recois_mess_wifi_wifi\paquet1.pcapng"
 
-filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\\appel_audio\\recois_appel_audio_4G\paquet1.pcapng"
+#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\\appel_audio\\recois_appel_audio_4G\paquet1.pcapng"
+
+filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\\appel_audio\\envoie_appel_audio_ethernet\paquet1.pcapng"
 
 print(get_TCP_dest(filepath))
