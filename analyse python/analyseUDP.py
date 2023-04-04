@@ -1,6 +1,6 @@
 import pyshark
 
-def get_TCP_dest(filepath):
+def get_UDP_dest(filepath):
     capture = pyshark.FileCapture(filepath)
 
     capture.load_packets()
@@ -8,7 +8,7 @@ def get_TCP_dest(filepath):
     dest = []
 
     for p in capture:
-        if hasattr(p, 'tcp'):
+        if hasattr(p, 'udp'):
             try :
                 ip = p.ip.dst
                 isnot = True
@@ -47,15 +47,6 @@ def get_TCP_dest(filepath):
                     dest.append(ip)
     return dest
 
+filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\\appel_audio\\recois_appel_audio_4G\paquet5.pcapng"
 
-#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\mess\envoie_recois_mess_4G\paquet1.pcapng"
-
-#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\mess\envoie_recois_mess_ethernet\paquet1.pcapng"
-
-#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\mess\envoie_recois_mess_wifi\paquet1.pcapng"
-
-#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\mess\envoie_recois_mess_wifi_wifi\paquet1.pcapng"
-
-filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\\appel_audio\\recois_appel_audio_4G\paquet1.pcapng"
-
-print(get_TCP_dest(filepath))
+print(get_UDP_dest(filepath))
