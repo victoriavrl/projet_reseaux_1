@@ -1,0 +1,25 @@
+personne qui enregistre les paquet était en ethernet et l'autre personne sur wifi
+
+appel audio paquet 1 : data : 1353809 : temps : 128.203930 - 3.543037 = 124.660893 secondes
+appel audio paquet 2 : data : 1170409 : temps : 135.518517 - 9.508232 = 126.007585 secondes
+paquet 1 : 10 859.9334355
+paquet 2 : 9 288.40117045
+volume de données échangées (en bytes) par seconde : 10 074.1673029
+
+messages paquet 1 : data : 1221840 : temps : 122.058110 - 0 = 122.058110
+messages paquet 2 : data : 1197752 : temps : 125.728434 - 0 = 125.728434
+paquet 1 : 10 010.3139398
+paquet 2 : 9 526.50058458
+volume de données échangées par seconde : 9 768.40726219
+
+appel vidéo paquet 1 : data : 44413465 : temps : 128.184250 - 6.327692 = 121.856558
+appel vidéo paquet 2 : data : 45432773 : temps : 131.863067 - 7.227971 = 124.635096
+paquet 1 : 364 473.326088
+paquet 2 : 364 526.320900
+volume de données échangées (en bytes) par seconde : 364 499.823494
+
+appel vidéo et audio paquet 1 : data 41723489 : temps : 130.333201 - 4.127410 = 126.205791
+appel vidéo et audio paquet 2 : data 48345726 : temps : 132.455335 - 4.740068 = 127.715267
+paquet 1 : 330 598.847084
+paquet 2 : 378 543.044505
+volume de données échangées (en bytes) par seconde : 354 570.945794

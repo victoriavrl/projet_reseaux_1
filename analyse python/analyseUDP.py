@@ -65,11 +65,11 @@ def get_total_length_all_data(filepath):
     for p in capture:
         if hasattr(p, 'udp'):
             try:
-                # Adresse ip Victoria pour ce sénario (appel_audio) : 192.168.1.50 (veut pas des autres paquets car pas des info d'un utilisateur à envoyer à un autre)
+                # Adresse ip Victoria pour ce sénario (appel_audio et appel_video) : 192.168.1.50 (veut pas des autres paquets car pas des info d'un utilisateur à envoyer à un autre)
                 if p.ip.dst != '192.168.1.50' and p.ip.src != '192.168.1.50':
                     continue
                 #n'est pas du data d'un utilisateur à envoyé à un autre
-                if 'mdns' in p or 'stun' in p or 'rtcp' in p :
+                if 'mdns' in p or 'stun' in p or 'rtcp' in p or 'icmp' in p:
                     continue
 
                 res += math.ceil(len(p.udp.payload) /3)
@@ -91,6 +91,10 @@ def get_total_length_all_data(filepath):
 #print("int(capture[116].udp.length) : ", int(capture[116].udp.length))
 #print(dir(capture[116].udp.payload))
 
-filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\load data\\appel_audio\paquet1.pcapng"
+#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\load data\\appel_audio\paquet2.pcapng"
+
+#filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\load data\\appel_video\paquet2.pcapng"
+
+filepath = "C:\\Users\delph\OneDrive\Documents\\UCL\B3Q2\LINFO1341 - Computer networks  information transfer\Projet\projet_reseaux_1\paquets\load data\\appel_audio_video\paquet2.pcapng"
 
 print(get_total_length_all_data(filepath))
